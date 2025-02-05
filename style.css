@@ -1,0 +1,59 @@
+/* Basic Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Full-screen background */
+.hero {
+    background: url('images/your-wedding-background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3em;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Scroll animations */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.section.visible {
+    opacity: 1;
+}
+
+/* Parallax effect */
+.parallax {
+    background: url('images/your-parallax-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* Styling content section */
+.content {
+    padding: 40px;
+    background: white;
+    color: #333;
+    text-align: center;
+}
